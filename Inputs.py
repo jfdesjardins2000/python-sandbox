@@ -2,6 +2,32 @@ from dataclasses import dataclass
 from typing import List
 
 @dataclass
+class Objective1:
+    ACPFAIBL: float
+    ACPFORT: float
+    ACPIL: float
+    ACPPTM: float
+    ACRS: float
+    ACT: float
+    AEC: float
+    AEPC: float
+    ANET: float
+    APLBA: float
+    APLIN: float
+    Objective: float
+    Primalinfeasibility: float
+    Total: float
+    AREG: float
+    ATBEMORT: float
+    ATBERETARD: float
+    ACRV: float
+    ASNAT: float
+
+@dataclass
+class Outputs:
+    OVOLTOTREC: List[float]
+
+@dataclass
 class Inputs:
     primary: str
     primary_comment: str
@@ -43,29 +69,3 @@ class Inputs:
     allpredictionsnodes: List[List[List[str]]]
     allpredictionsnodes_comment: str
     yields: str
-
-@dataclass
-class Outputs:
-    OVOLTOTREC: List[float]
-
-@dataclass
-class Objective1:
-    ACPFAIBL: float
-    ACPFORT: float
-    ACPIL: float
-    ACPPTM: float
-    ACRS: float
-    ACT: float
-    AEC: float
-    AEPC: float
-    ANET: float
-    APLBA: float
-    APLIN: float
-    Objective: float
-    Primalinfeasibility: float
-    Total: float
-    AREG: float
-    ATBEMORT: float
-    ATBERETARD: float
-    ACRV: float
-    ASNAT: float
