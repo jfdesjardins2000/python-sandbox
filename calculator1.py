@@ -21,6 +21,6 @@ def main() -> None:
     x = float(input("What's x? "))
     print("x squared is", square(x))
 
-
+# Main function
 if __name__ == "__main__":
     main()
